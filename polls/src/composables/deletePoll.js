@@ -1,6 +1,6 @@
 async function deletePoll(poll) {
     try {
-        fetch(`http://localhost:5000/polls/${poll._id}`, {
+        fetch(`https://poll-project-heroku.herokuapp.com/${poll._id}`, {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"

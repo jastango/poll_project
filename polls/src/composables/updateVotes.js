@@ -4,7 +4,7 @@ async function updateVotes(poll) {
         votesB: poll.votesB
     }
     try {
-        fetch(`http://localhost:5000/polls/${poll._id}`, {
+        fetch(`https://poll-project-heroku.herokuapp.com/${poll._id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
