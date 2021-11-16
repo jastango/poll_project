@@ -70,7 +70,7 @@ export default {
 
       // Post Poll
       if (this.valid) {
-        fetch("http://localhost:5000/polls", {
+        fetch("https://poll-project-heroku.herokuapp.com/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
